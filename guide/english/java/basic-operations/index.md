@@ -13,7 +13,23 @@ Java supports the following operations on variables:
 *   __Assignment__: `=`, `+=`, `-=`, `*=`, `/=`, `%=`, `<<=`, `>>=`, `&=`, `^=`, `|=`
 *   __Others__: `Conditional/Ternary(?:)`, `instanceof`
 
-While most of the operations are self-explanatory, the Conditional (Ternary) Operator works as follows:
+While most of the operations are self-explanatory, the increment and decrement operations can have subtle differences.
+
+If you put ++ in front of a variable, it will increment the variable and return that value. 
+```java
+    int x = 1; //set x = 1
+    int y = ++x //set x = 2, y = 2
+```
+
+However, if you put ++ after a variable, it will increment the variable but return the original value. 
+```java
+    int x = 1; //set x = 1
+    int y = x++ //set x = 2, y = 1
+```
+The same logic applies to the decrement (--) operation. 
+
+
+The Conditional (Ternary) Operator works as follows:
 
 `expression that results in boolean output ? return this value if true : return this value if false;`
 
